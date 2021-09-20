@@ -15,8 +15,13 @@ body {
     font-weight: 300;
 }
 
+h1, p {
+    font-weight: 300;
+}
+
 h2 {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 35px;
 }
 
 /* Utilities */
@@ -44,24 +49,31 @@ h2 {
 }
 
 .banner-img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    
 }
 
 .banner-text {
     display: inline-block;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 5%;
     width: 700px;
     color: white;
     font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
+}
+
+.opacity-img {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 
@@ -90,8 +102,20 @@ h2 {
 /* dimensions general content sec. */
 .sidebar-sx,
 .sidebar-dx {
+    position: relative;
     float: left;
     width: 20%;
+}
+
+.sidebar-img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sidebar-sx-text {
+    top: 60px;
 }
 
 .central-content {
